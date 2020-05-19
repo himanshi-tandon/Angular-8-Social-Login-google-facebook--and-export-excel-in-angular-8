@@ -14,7 +14,7 @@
 <ng-template #proData>
   <h4 class="marginBottom">My {{user.provider}} profile</h4>
   <br/>
- <!-- <img src="{{user.image}}" class="marginBottom"> -->
+ <img [src]="user.photoUrl" class="marginBottom">
 <div class="marginBottom">
  <h4>{{user.name}}</h4>
  <p>{{user.email}}</p>

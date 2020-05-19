@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { GoogleLoginProvider, FacebookLoginProvider, AuthService } from 'angularx-social-login';  
+import { GoogleLoginProvider, FacebookLoginProvider } from 'angularx-social-login';  
 import { SocialLoginModule, AuthServiceConfig } from 'angularx-social-login';  
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
