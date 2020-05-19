@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "socaillogindemo"
+    }
+  },
+  "defaultProject": "socaillogindemo",
+  "cli": {
+    "analytics": false
+  }
 }
