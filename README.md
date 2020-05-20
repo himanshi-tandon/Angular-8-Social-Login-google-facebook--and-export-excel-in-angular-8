@@ -39,3 +39,21 @@ export function provideConfig() {
       useFactory: provideConfig
     }
   ],
+  
+  
+  
+  -------------------------------------------------------------------------------------------------------- export excel ---------------
+  
+  
+1)  Install XLSX Library Execute the following command to add the xlsx library to our application.
+npm install xlsx --save
+2)@ViewChild('epltable', { static: false }) epltable: ElementRef;
+3) exportToExcel() {
+  const ws: xlsx.WorkSheet =   
+  xlsx.utils.table_to_sheet(this.epltable.nativeElement);
+  const wb: xlsx.WorkBook = xlsx.utils.book_new();
+  xlsx.utils.book_append_sheet(wb, ws, 'Sheet1');
+  xlsx.writeFile(wb, 'epltable.xlsx');
+ }
+
+
